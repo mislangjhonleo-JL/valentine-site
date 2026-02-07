@@ -88,9 +88,56 @@
     <div class="heart">💞</div>
     <p>Thank you for being honest.<br>I really appreciate you telling me.</p>
   </div>
-</body>
-</html># valentine-site
-body {
+  body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #ff7eb3, #ff758c);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Rubik Puddles', cursive;
+  text-align: center;
+  color: #4b1020;
+}
+
+.card {
+  background: #fff0f5;
+  padding: 40px;
+  border-radius: 30px;
+  max-width: 450px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+  animation: pop 0.8s ease;
+}
+
+.heart {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  background: #ff3f6c;
+  color: white;
+  padding: 12px 26px;
+  margin: 8px;
+  border-radius: 40px;
+  font-size: 1.1rem;
+  transition: transform 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+@keyframes pop {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}body {
   margin: 0;
   height: 100vh;
   background: linear-gradient(135deg, #ff7eb3, #ff758c);
